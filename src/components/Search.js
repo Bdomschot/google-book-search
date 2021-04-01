@@ -5,7 +5,7 @@ function Search(){
     return (
         <Card>
             <Card.Body>
-                <h1> Book Search.</h1>
+                <h3> Book Search.</h3>
                 <Form>
                     <Form.Group>
                         <Form.Control type="text" placeholder= "Enter your search here."/>
