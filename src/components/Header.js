@@ -11,3 +11,5 @@ function Header(){
      </Nav>
     </Navbar>
 }
+
+export default Header
