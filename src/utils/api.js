@@ -14,7 +14,9 @@ const API = {
         return axios.delete("/api/books/"+id)
     },
 
-    displayBooks: function(){
+    displayBooks: function( req , res){
         return axios.get("/api/books")
     }
 }
+
+export default API;

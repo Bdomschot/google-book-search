@@ -1,16 +1,30 @@
 import './App.css';
-import Header from "./components/Header";
-import Jumbo from "./components/Jumbo";
-import Results from './components/Results';
-import Search from "./components/Search";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
+import SearchPage from './pages/SearchPage';
+import SavedPage from './pages/SavePage'
+
 
 function App() {
-  return (
+  return(
     <div>
-      <Header/>
-      <Jumbo />
-      <Search/>
-      <Results/>
+      <Router>
+        <Switch>
+          <Route exact path = "/Search">
+            <SearchPage/>
+          </Route>
+          <Route exact path = "/Saved">
+            <SavedPage/>
+          </Route>
+          <Redirect from ="*" to = "/Search"/>
+
+        </Switch>
+      </Router>
     </div>
   )
 }
