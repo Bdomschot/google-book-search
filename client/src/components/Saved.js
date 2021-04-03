@@ -38,7 +38,7 @@ function Saved(){
                         <h5> {book.authors} </h5>
                         </Col>
                         <Col md={2}>
-                        <Button><a href={book.link} className="text-white" > View </a></Button>
+                        <Button><a href={book.link} target="_blank" className="text-white" > View </a></Button>
                         {' '}
                         <Button onClick={() => handleDelete(book._id)}> Delete </Button>
                         </Col>

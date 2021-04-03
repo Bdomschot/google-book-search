@@ -31,7 +31,7 @@ function Results({books}){
                         <h5> {book.volumeInfo.authors} </h5>
                         </Col>
                         <Col md={2}>
-                        <Button><a href={book.volumeInfo.previewLink} className="text-white"> View </a></Button>
+                        <Button><a href={book.volumeInfo.previewLink} target="_blank" className="text-white"> View </a></Button>
                         {' '}
                         <Button onClick={() => handleSave(book)}> Save </Button>
                         </Col>
